@@ -28,8 +28,6 @@ func Home(p *page.Page) {
 func main() {
 	app := http.NewServeMux()
 
-	app.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
-
 	router := router.NewRouter(port.NewStdHttpServer(app))
 
 	router.Page("/", Home)
