@@ -1,0 +1,8 @@
+package client
+
+import "fmt"
+
+templ ClientComponent(name string) {
+	<div id={ name }></div>
+	<script type="module" src={ fmt.Sprintf("/assets/js/%s.js", name) }></script>
+}
