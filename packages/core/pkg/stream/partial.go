@@ -3,25 +3,24 @@ package stream
 import (
 	"context"
 	"fmt"
+	"go-web/pkg/adapter"
 	"net/http"
-
-	"github.com/a-h/templ"
 )
 
-type StreamComponent struct {
+type Partial struct {
 	ID        string
-	Component templ.Component
+	Component adapter.Component
 }
 
-func NewStreamComponent(id string, component templ.Component) *StreamComponent {
-	return &StreamComponent{
+func NewPartial(id string, component adapter.Component) *Partial {
+	return &Partial{
 		ID:        id,
 		Component: component,
 	}
 }
 
-func (sc *StreamComponent) Render(ctx context.Context, w http.ResponseWriter) error {
-	err := sc.Component.Render(ctx, w)
+func (p *Partial) Render(ctx context.Context, w http.ResponseWriter) error {
+	err := p.Component.Render(ctx, w)
 	if err != nil {
 		return err
 	}
@@ -37,9 +36,6 @@ func (sc *StreamComponent) Render(ctx context.Context, w http.ResponseWriter) er
 				loading.replaceWith(content.content);
 			})();
 		</script>
-	`, sc.ID, sc.ID, sc.ID)))
-	if err != nil {
-		return err
-	}
-	return nil
+	`, p.ID, p.ID, p.ID)))
+	return err
 }

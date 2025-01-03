@@ -15,7 +15,7 @@ page to the user while the server is processing the slow part.
 
 ## TODO List
 
-- [ ] Make streaming API better
+- [x] Make streaming API better
 - [ ] Persistant layouts
 - [ ] Static HTML
 generation for better page loads
