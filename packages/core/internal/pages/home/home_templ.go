@@ -182,7 +182,7 @@ func User() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<h1>Hello, Gustavo!</h1>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<p>Hello, Gustavo!</p>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

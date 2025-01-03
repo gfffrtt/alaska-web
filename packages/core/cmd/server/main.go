@@ -32,5 +32,5 @@ func main() {
 
 	router.Page("/", Home)
 
-	http.ListenAndServe(":8080", app)
+	http.ListenAndServe(":3000", app)
 }
