@@ -18,11 +18,8 @@ jobs:
         with:
           bun-version: "latest"
 
-      - name: Switch to directory
-        run: cd packages/alaska-dom
-
       - name: Install dependencies
-        run: bun install
+        run: cd packages/alaska-dom && bun install
 
       - name: Publish to npm
         run: bun publish
