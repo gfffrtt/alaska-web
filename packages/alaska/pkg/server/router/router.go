@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/a-h/templ"
-	"github.com/gfffrtt/alaska/packages/alaska/pkg/render"
-	"github.com/gfffrtt/alaska/packages/alaska/pkg/render/page"
-	"github.com/gfffrtt/alaska/packages/alaska/pkg/server"
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render"
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render/page"
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/server"
 )
 
 type Router struct {

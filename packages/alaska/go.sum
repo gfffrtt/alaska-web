@@ -1,4 +1,6 @@
 github.com/a-h/templ v0.3.819 h1:KDJ5jTFN15FyJnmSmo2gNirIqt7hfvBD2VXVDTySckM=
 github.com/a-h/templ v0.3.819/go.mod h1:iDJKJktpttVKdWoTkRNNLcllRI+BlpopJc+8au3gOUo=
+github.com/gfffrtt/alaska/packages/alaska v0.0.0-20250131004804-da8e7ec4339f h1:6JrRFE+PcGNpkXaFgUhnau2yezsHqGZHdKR3qBx4sD0=
+github.com/gfffrtt/alaska/packages/alaska v0.0.0-20250131004804-da8e7ec4339f/go.mod h1:8NWFb7sh/9lKDsPZ0mqcKTwU2t8CgztuP8WIvQDx5Wk=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
