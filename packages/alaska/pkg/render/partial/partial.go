@@ -3,9 +3,10 @@ package partial
 import (
 	"context"
 	"fmt"
-	"go-web/pkg/render"
 
 	"net/http"
+
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render"
 )
 
 type Partial struct {

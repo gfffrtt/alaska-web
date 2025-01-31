@@ -1,4 +1,4 @@
-# Weasel
+# Alaska
 
 A simple, lightweight and fast web framework for building modern web applications.
 

@@ -3,12 +3,12 @@ package router
 import (
 	"context"
 	"fmt"
-	"go-web/pkg/render"
-	"go-web/pkg/render/page"
-	"go-web/pkg/server"
 	"net/http"
 
 	"github.com/a-h/templ"
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render"
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render/page"
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/server"
 )
 
 type Router struct {

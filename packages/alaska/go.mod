@@ -1,5 +1,5 @@
-module go-web
+module github.com/gfffrtt/alaska/tree/main/packages/alaska
 
 go 1.23.3
 
-require github.com/a-h/templ v0.2.793
+require github.com/a-h/templ v0.3.819

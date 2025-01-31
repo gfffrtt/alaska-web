@@ -1,8 +1,9 @@
 package layout
 
 import (
-	"go-web/pkg/render/partial"
 	"net/http"
+
+	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render/partial"
 )
 
 type Layout struct {
