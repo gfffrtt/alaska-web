@@ -1,0 +1,26 @@
+{
+  "name": "alaska-dom",
+  "type": "module",
+  "version": "1.0.1",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.3.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "lint": "tsc --noEmit",
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts"
+}
