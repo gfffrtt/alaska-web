@@ -6,7 +6,7 @@ import (
 
 	"net/http"
 
-	"github.com/gfffrtt/alaska/tree/main/packages/alaska/pkg/render"
+	"github.com/gfffrtt/alaska/pkg/render"
 )
 
 type Partial struct {

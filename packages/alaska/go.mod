@@ -1,5 +1,5 @@
-module github.com/gfffrtt/alaska/tree/main/packages/alaska
+module github.com/gfffrtt/alaska
 
 go 1.23.3
 
-require github.com/a-h/templ v0.3.819
+require github.com/a-h/templ v0.3.819 // indirect
