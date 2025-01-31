@@ -3,7 +3,7 @@ name: Publish to npm
 on:
   push:
     branches: ["main"]
-    paths: ["packages/alaska-dom/**"]
+    paths: ["packages/alaska-dom/**", ".github/workflows/**"]
 
 jobs:
   publish:
