@@ -22,6 +22,6 @@ jobs:
         run: cd packages/alaska-dom && bun install
 
       - name: Publish to npm
-        run: bun publish
+        run: cd packages/alaska-dom && bun publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
