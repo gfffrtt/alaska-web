@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { createNewFolder } from "./src/create-new-repo";
 import { getInputs } from "./src/get-inputs";
 
