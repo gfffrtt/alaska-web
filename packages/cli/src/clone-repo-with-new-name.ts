@@ -1,5 +1,6 @@
 import { tasks } from "@clack/prompts";
-import { $ } from "bun";
+import { execSync } from "child_process";
+import fs from "fs/promises";
 
 export const cloneRepoWithNewName = async (
   repoName: string,
@@ -9,25 +10,37 @@ export const cloneRepoWithNewName = async (
     {
       title: "Cloning template",
       task: async () => {
-        await $`git clone --depth=1 https://github.com/gfffrtt/alaska-web.git`;
+        execSync(
+          `git clone --depth=1 https://github.com/gfffrtt/alaska-web.git`
+        );
       },
     },
     {
       title: "Creating new repository",
       task: async () => {
-        await $`mkdir ${repoName}`;
+        execSync(`mkdir ${repoName}`);
       },
     },
     {
       title: "Copying template",
       task: async () => {
-        await $`cp -r alaska-web/${pathToTemplate}/* ${repoName}`;
+        try {
+          await fs.cp(`alaska-web/${pathToTemplate}`, repoName, {
+            recursive: true,
+          });
+        } catch (error) {
+          console.error(error);
+        }
       },
     },
     {
       title: "Cleaning up",
       task: async () => {
-        await $`rm -rf alaska-web`;
+        try {
+          await fs.rm("alaska-web", { recursive: true });
+        } catch (error) {
+          console.error(error);
+        }
       },
     },
   ]);

@@ -3,7 +3,7 @@ name: Publish to npm
 on:
   push:
     branches: ["main"]
-    paths: ["packages/alaska-dom/**", ".github/workflows/**"]
+    paths: ["packages/cli/**", ".github/workflows/**"]
 
 jobs:
   publish:
@@ -19,12 +19,12 @@ jobs:
           bun-version: "latest"
 
       - name: Install dependencies
-        run: cd packages/alaska-dom && bun install
+        run: cd packages/cli && bun install
 
       - name: Install build
-        run: cd packages/alaska-dom && bun run build
+        run: cd packages/cli && bun run build
 
       - name: Publish to npm
-        run: cd packages/alaska-dom && bun publish
+        run: cd packages/cli && bun publish
         env:
           NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
