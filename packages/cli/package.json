@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "bin": "dist/index.cjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "tsup index.ts"
   },
