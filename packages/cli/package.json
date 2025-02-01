@@ -1,8 +1,8 @@
 {
-  "name": "alaska-cli",
+  "name": "create-alaska-app",
   "module": "index.ts",
   "type": "module",
-  "bin": "dist/index.js",
+  "bin": "dist/index.cjs",
   "version": "1.0.0",
   "scripts": {
     "build": "tsup index.ts"
