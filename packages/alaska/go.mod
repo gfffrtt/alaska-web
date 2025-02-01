@@ -1,4 +1,4 @@
-module github.com/gfffrtt/alaska/packages/alaska
+module github.com/gfffrtt/alaska
 
 go 1.23.3
 
