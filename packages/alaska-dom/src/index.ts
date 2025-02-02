@@ -1,5 +1,5 @@
 import { router } from "./router/router";
 
-export const render = () => {
+export const server = () => {
   router();
 };
