@@ -19,7 +19,7 @@ export const replacePage = async (
       if (!content) throw new Error("No content element found");
       content.innerHTML = "";
       const nodes = domParser.parseFromString(html, "text/html");
-      nodes.childNodes.forEach((node) => appendContent(content, node));
+      nodes.head.childNodes.forEach((node) => appendContent(content, node));
     },
     onPartialLoad: (html) => {
       const nodes = domParser.parseFromString(html, "text/html");
