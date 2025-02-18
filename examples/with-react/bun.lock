@@ -4,7 +4,7 @@
     "": {
       "name": "with-react",
       "dependencies": {
-        "alaska-dom": "^1.1.0",
+        "alaska-dom": "^1.1.1",
         "glob": "^11.0.1",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
@@ -182,7 +182,7 @@
 
     "@vitejs/plugin-react": ["@vitejs/plugin-react@4.3.4", "", { "dependencies": { "@babel/core": "^7.26.0", "@babel/plugin-transform-react-jsx-self": "^7.25.9", "@babel/plugin-transform-react-jsx-source": "^7.25.9", "@types/babel__core": "^7.20.5", "react-refresh": "^0.14.2" }, "peerDependencies": { "vite": "^4.2.0 || ^5.0.0 || ^6.0.0" } }, "sha512-SCCPBJtYLdE8PX/7ZQAs1QAZ8Jqwih+0VBLum1EGqmCCQal+MIUqLCzj3ZUy8ufbC0cAM4LRlSTm7IQJwWT4ug=="],
 
-    "alaska-dom": ["alaska-dom@1.1.0", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-70Cb4EZxLSllL5DE3mHtftLvUMXwEr/DLVojQi4RsaHQlf8udBnU+R3TEm7dokyG3HA86GuaCSvD5/O0ae6KKQ=="],
+    "alaska-dom": ["alaska-dom@1.1.1", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-Gn8MW2+gAxjWSU8Z+QBBTkYRqkT2Z0nxRCNz2+EqaBcoKXMRljIEEJpU2Vcq9pXDgyeRzTE1P66MyT7cFFK5ig=="],
 
     "ansi-regex": ["ansi-regex@6.1.0", "", {}, "sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA=="],
 
