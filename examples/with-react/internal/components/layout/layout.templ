@@ -1,0 +1,16 @@
+package layout
+
+import "github.com/gfffrtt/alaska"
+
+templ Layout() {
+	@alaska.RootLayout(templ.NopComponent) {
+		<h1>Alaska Web</h1>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/counter">Counter</a></li>
+		</ul>
+		@alaska.PageContent() {
+			{ children... }
+		}
+	}
+}

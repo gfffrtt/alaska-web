@@ -1,0 +1,8 @@
+package pages
+
+import "github.com/gfffrtt/alaska"
+
+templ CounterPage(count int) {
+	<h1>My counter</h1>
+	@alaska.ClientComponent("counter", map[string]int{"count": count})
+}
